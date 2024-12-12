@@ -1,0 +1,107 @@
+html body ul#swiper.tabs.z-depth-5.teal.darken-3 li.indicator {
+  background-color: #00bfa5 !important;
+  color: white;
+}
+
+
+/*Estilos para el viewport*/
+.view {
+  min-height: 100vh;
+}
+
+/*formulario es el padre todo*/
+#formulary {
+  height: calc(100vh - 48px);
+}
+
+/*esto es el padre de todo lo que haya dentro del tab*/
+div.tabs-content.carousel.carousel-slider {
+  height: 100% !important;
+}
+
+
+
+/*Selector ingreso/gasto/trasnferir*/
+
+.selector-trans {
+  margin: 0;
+  font-size: 1.2rem;
+  background-color: #00897b;
+  color: #e0f2f1;
+  font-weight: 600;
+  align-items: center;
+}
+
+
+.selector-trans .activo {
+  background-color: #00796b;
+}
+
+#tipo label {
+  padding: 10px 0;
+  font-size: 14px;
+  color: #e0f2f1;
+  height: 7%;
+}
+
+/* Pantalla para mostrar los digitos del monto*/
+.display {
+  height: 25%;
+  padding-right: 15px;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 3.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+/* selector de cuentas y categorias*/
+.account {
+  min-height: 12%;
+  padding: 0 .5rem;
+}
+
+.account .row {
+  margin-bottom: 0;
+}
+
+/*Estilos para el teclado*/
+.keyboard {
+  min-height: 56%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 60px;
+
+}
+
+.number,
+.clear {
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  padding: 0;
+}
+
+.number:active {
+  font-weight: bold;
+}
+
+#input-amount {
+  display: none;
+}
+
+#show-amount {
+  font-size: 3rem;
+}
+
+
+#cancel {
+  left: 60px;
+  bottom: 8px;
+}
+
+#ok {
+  right: 60px;
+  bottom: 8px;
+  background: none;
+  border: none;
+}

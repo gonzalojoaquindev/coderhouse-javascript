@@ -70,7 +70,7 @@ const realizarTransaccion = () => {
                 console.log(`el monto actual de la cuenta ${account.name} es ${account.amount}`)
                 account.amount = account.amount + t.amount
                 console.log(`Se ha ingresado  $${t.amount} en la cuenta ${account.name}, el nuevo monto es ${account.amount}`)
-
+                return
             }
         }
 
@@ -82,11 +82,10 @@ const realizarTransaccion = () => {
         //utilizando ciclo for of según consigna
         for (let account of user.accounts) {
             if (account.name === t.account) {
-
                 console.log(`el monto actual de la cuenta ${account.name} es ${account.amount}`)
                 account.amount = account.amount - t.amount
                 console.log(`Se ha gastado $${t.amount} de la cuenta ${account.name}, el nuevo monto es ${account.amount} `)
-
+                return
             }
         }
 

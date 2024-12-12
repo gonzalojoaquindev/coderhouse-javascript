@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Ms+Madi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', san-serif;
+}
+
+body {
+    background-color: #292C3E;
+    color: white;
+    padding: 10px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#transactions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+/* Card de transacción */
+.transaction-card {
+
+    background: #222432;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(65, 62, 62, 0.563);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+    /*  border: 2px solid #EAFF6A; */
+    /* Color de borde */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.transaction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgb(0, 0, 0);
+}
+
+/* Encabezado de la transacción */
+.transaction-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.transaction-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #c6961d;
+}
+
+.transaction-amount {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4caf50;
+    /* Verde para ingresos */
+}
+
+/* Detalles de la transacción */
+.transaction-details p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #f8f8f8;
+}
+
+.transaction-details strong {
+    color: #ffffff;
+}
+
+
+/* Contenedor del botón flotante */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Botón flotante */
+.floating-button button {
+    background-color: teal;
+    /* Color principal del botón */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al pasar el cursor */
+.floating-button button:hover {
+    transform: scale(1.1);
+    /* Ampliar ligeramente */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Más sombra */
+}
+
+/* Efecto al hacer clic */
+.floating-button button:active {
+    transform: scale(0.95);
+    /* Reducir un poco */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Fondo del popup */
+.popup {
+    display: none;
+    /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Contenido del popup */
+.popup-content {
+
+    background-color: #222432;
+    border: 1px solid #262c5a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-out;
+    /* Animación de entrada */
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
