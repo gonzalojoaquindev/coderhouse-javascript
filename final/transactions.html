@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transacciones</title>
+    <!-- Import Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Contenedor de las transacciones -->
+        <div id="transactionList" class="transaction-list">
+            <!-- Aquí se pintarán las transacciones dinámicamente -->
+        </div>
+    </div>
+
+    <!-- Import Material Icons -->
+
+    <!-- Import CSS (opcional para diseño) -->
+
+    <!-- Button to trigger the modal -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#transactionModal">Agregar Transacción</a>
+
+    <!-- Modal Structure -->
+    <div id="transactionModal" class="modal">
+        <div class="modal-content">
+            <h4>Agregar Transacción</h4>
+
+            <form id="transactionForm">
+                <!-- Monto -->
+                <div class="input-field">
+                    <input id="amount" type="number" required>
+                    <label for="amount">Monto</label>
+                </div>
+
+                <!-- Cuenta -->
+                <div class="input-field">
+                    <select id="account" required>
+                        <option value="" disabled selected>Selecciona una cuenta</option>
+                        <option value="banco">Banco</option>
+                        <option value="efectivo">Efectivo</option>
+                        <option value="tarjeta">Tarjeta</option>
+                    </select>
+                    <label for="account">Cuenta</label>
+                </div>
+
+                <div class="row row2">
+                    <div class="col s2 icon-form-category ">
+                        <i id="category-icon" class="material-icons icon-form-category2"
+                            style=" color: teal;">help_outline</i>
+                    </div>
+                    <!-- Categoría -->
+                    <div class="input-field col s5">
+
+                        <select id="category-select" required>
+                            <option value="" disabled selected>Selecciona una categoría</option>
+                        </select>
+                        <label for="category-select">Categoría</label>
+                    </div>
+
+                    <!-- Subcategoría -->
+                    <div class="input-field col s5">
+                        <select id="subcategory-select">
+                            <option value="" disabled selected>Selecciona una subcategoría</option>
+                        </select>
+                        <label>Subcategoría</label>
+                    </div>
+
+                </div>
+
+                <!-- Tipo de Transacción -->
+                <p>Tipo de Transacción</p>
+                <p>
+                    <label>
+                        <input name="transactionType" type="radio" value="ingreso" required />
+                        <span>Ingreso</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="transactionType" type="radio" value="gasto" required />
+                        <span>Gasto</span>
+                    </label>
+                </p>
+
+                <!-- Fecha -->
+                <div class="input-field">
+                    <input id="date" type="text" class="datepicker" required>
+                    <label for="date">Fecha</label>
+                </div>
+
+                <!-- Submit -->
+                <div class="modal-footer">
+                    <button type="submit" class="modal-close waves-effect waves-green btn"
+                        id="saveTransaction">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Import Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/transactions.js"></script>
+
+</body>
+
+</html>

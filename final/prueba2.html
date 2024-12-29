@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas con SVG</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <style>
+        .svg-tarjeta {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            /* Para que se ajuste al contenedor */
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Tarjeta SVG 1 -->
+            <div class="col s6 m4 l4">
+                <svg class="svg-tarjeta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+                    <rect x="0" y="0" width="400" height="250" rx="15" fill="url(#gradient1)" />
+                    <defs>
+                        <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#4a90e2" />
+                            <stop offset="100%" stop-color="#003f7d" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="20" fill="#FFD700" />
+                    <circle cx="75" cy="50" r="20" fill="#FF4500" />
+                    <text x="20" y="150" font-family="Arial, sans-serif" font-size="18" fill="#FFFFFF">Tarjeta de
+                        débito</text>
+                    <text x="20" y="180" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF"
+                        id="credit-balance-card">Saldo: $385,375
+                        CLP</text>
+                    <text x="20" y="120" font-family="Courier New, monospace" font-size="20" fill="#FFFFFF">1234 5678
+                        9012 3456</text>
+                    <text x="300" y="200" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">Exp:
+                        12/28</text>
+                </svg>
+            </div>
+
+            <!-- Tarjeta SVG 2 -->
+            <div class="col s6 m4 l4">
+                <svg class="svg-tarjeta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+                    <rect x="0" y="0" width="400" height="250" rx="15" fill="url(#gradient2)" />
+                    <defs>
+                        <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#ff5722" />
+                            <stop offset="100%" stop-color="#d84315" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="20" fill="#FFD700" />
+                    <circle cx="75" cy="50" r="20" fill="#FF4500" />
+                    <text x="20" y="150" font-family="Arial, sans-serif" font-size="18" fill="#FFFFFF">Tarjeta de
+                        Crédito</text>
+                    <text x="20" y="180" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF"
+                        id="debit-balance-card">Saldo: -$800,000
+                        CLP</text>
+                    <text x="20" y="120" font-family="Courier New, monospace" font-size="20" fill="#FFFFFF">9876 5432
+                        1098 7654</text>
+                    <text x="300" y="200" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">Exp:
+                        06/27</text>
+                </svg>
+            </div>
+
+            <!-- Tarjeta SVG 3 -->
+            <div class="col s6 m4 l4">
+                <svg class="svg-tarjeta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+                    <rect x="0" y="0" width="400" height="250" rx="15" fill="url(#cashGradient)" />
+                    <defs>
+                        <linearGradient id="cashGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#4CAF50" />
+                            <stop offset="100%" stop-color="#087f23" />
+                        </linearGradient>
+                    </defs>
+
+                    <rect x="20" y="50" width="360" height="80" rx="10" fill="#81C784" />
+                    <rect x="30" y="60" width="340" height="60" rx="8" fill="#A5D6A7" />
+                    <circle cx="200" cy="90" r="25" fill="#66BB6A" />
+                    <text x="200" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="20"
+                        fill="#FFFFFF">$</text>
+
+                    <text x="20" y="150" font-family="Arial, sans-serif" font-size="18" fill="#FFFFFF">Dinero en
+                        efectivo</text>
+                    <text x="20" y="180" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF"
+                        id="cash-balance-card">Saldo: -$200000
+                        CLP</text>
+
+
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

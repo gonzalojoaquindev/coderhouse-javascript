@@ -31,6 +31,7 @@ export class Transaction {
             return false;
         }
         if (isNaN(amount)) {
+            console.log(amount)
             console.error("El monto debe ser un valor númerico");
             return false;
         }

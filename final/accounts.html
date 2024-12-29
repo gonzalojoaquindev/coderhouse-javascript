@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transacciones</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/accounts.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <!-- Íconos de Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-wrapper teal white-text">
+
+
+            <!-- Links del centro -->
+            <ul class=" left hide-on-med-and-down">
+                <li><a href="trans.html" id="transactions">Transacciones</a></li>
+                <li><a href="panel.html" id="panel">Panel de Control</a></li>
+                <li class="active"><a href="accounts.html">Cuentas</a></li>
+                <li><a href="categories.html">Categorias</a></li>
+                <!--   <li><a href="#" id="toggleDarkMode" class="btn blue waves-effect">Modo Oscuro</a></li> -->
+
+
+            </ul>
+            <!-- Logo -->
+            <a href="#" class="brand-logo">
+                <img src="assets/logo.svg" alt="Logo" class="logo-img" />
+            </a>
+
+
+            <!-- Botones y perfil a la derecha -->
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <div class="switch">
+                        <label>
+                            Claro
+                            <input type="checkbox" class="toggleDarkMode">
+                            <span class="lever"></span>
+                            Oscuro
+                        </label>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#" class="profile-menu">
+                        <img src="assets/profile.jpg" alt="Perfil" class="circle profile-img">
+                        <span>Gonzalo Araya</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Botón de menú móvil -->
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger right">
+                <i class="material-icons">menu</i>
+            </a>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Contenedor de las transacciones -->
+        <div id="accountList" class="account-list">
+            <!-- Aquí se pintarán las transacciones dinámicamente -->
+        </div>
+    </div>
+
+
+
+    <!-- Menú móvil -->
+    <ul class="sidenav teal" id="mobile-menu">
+        <li><a href="#" id="transactions"><strong>Transacciones</strong></a></li>
+        <li><a href="#" id="panel">Panel de Control</a></li>
+        <li><a href="#" id="accounts">Cuentas</a></li>
+        <li><a href="#" class="btn blue waves-effect">+ Registros</a></li>
+        <li>
+            <a href="#" class="profile-menu">
+                <img src="assets/profile.jpg" alt="Perfil" class="circle profile-img">
+                <span>Gonzalo Araya</span>
+            </a>
+        </li>
+
+    </ul>
+
+
+
+
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+    <!--  <script src="js/transactions.js"></script> -->
+    <script src="js/accounts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas con Materialize</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <style>
+        .tarjeta {
+            border-radius: 8px;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .positivo {
+            background-color: #007bff;
+            /* Azul */
+        }
+
+        .negativo {
+            background-color: #ff5722;
+            /* Rojo */
+        }
+
+        .saldo-positivo {
+            background-color: #28a745;
+            /* Verde */
+        }
+
+        .saldo-negativo {
+            background-color: #ff9800;
+            /* Naranja */
+        }
+    </style>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250"
+        style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <!-- Fondo de la tarjeta -->
+        <rect x="0" y="0" width="400" height="250" rx="15" fill="url(#gradient)" />
+
+        <!-- Gradiente del fondo -->
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#4a90e2" />
+                <stop offset="100%" stop-color="#003f7d" />
+            </linearGradient>
+        </defs>
+
+        <!-- Logo de la tarjeta (círculos para simular un logo de red de pago) -->
+        <circle cx="50" cy="50" r="20" fill="#FFD700" />
+        <circle cx="75" cy="50" r="20" fill="#FF4500" />
+
+        <!-- Nombre del titular -->
+        <text x="20" y="150" font-family="Arial, sans-serif" font-size="18" fill="#FFFFFF">Nombre del Titular</text>
+
+        <!-- Saldo -->
+        <text x="20" y="180" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF">
+            Saldo: $385,375 CLP
+        </text>
+
+        <!-- Número de tarjeta -->
+        <text x="20" y="120" font-family="Courier New, monospace" font-size="20" fill="#FFFFFF">
+            1234 5678 9012 3456
+        </text>
+
+        <!-- Fecha de expiración -->
+        <text x="300" y="200" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">
+            Exp: 12/28
+        </text>
+    </svg>
+    <div class="container">
+        <div class="row">
+            <!-- Tarjeta 1 -->
+            <div class="col s12 m6 l4">
+                <div class="card tarjeta positivo">
+                    <div class="card-content white-text">
+                        <span class="card-title">Banco de Chile corriente</span>
+                        <p>385.375 CLP</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="col s12 m6 l4">
+                <div class="card tarjeta negativo">
+                    <div class="card-content white-text">
+                        <span class="card-title">Banco de Chile Visa $</span>
+                        <p>-800.000 CLP</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col s12 m6 l4">
+                <div class="card tarjeta positivo">
+                    <div class="card-content white-text">
+                        <span class="card-title">Banco de Chile Línea de crédito</span>
+                        <p>500.000 CLP</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="col s12 m6 l4">
+                <div class="card tarjeta saldo-positivo">
+                    <div class="card-content white-text">
+                        <span class="card-title">Banco de Chile VISA USD</span>
+                        <p>449 US$</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="col s12 m6 l4">
+                <div class="card tarjeta negativo">
+                    <div class="card-content white-text">
+                        <span class="card-title">Banco Estado</span>
+                        <p>-431.978 CLP</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="col s12 m6 l4">
+                <div class="card tarjeta saldo-negativo">
+                    <div class="card-content white-text">
+                        <span class="card-title">Cuenta Rut</span>
+                        <p>-581.625 CLP</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 7 -->
+            <div class="col s12 m6 l4">
+                <div class="card tarjeta negativo">
+                    <div class="card-content white-text">
+                        <span class="card-title">Efectivo</span>
+                        <p>-2.401.855 CLP</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 8 -->
+            <div class="col s12 m6 l4">
+                <div class="card tarjeta saldo-negativo">
+                    <div class="card-content white-text">
+                        <span class="card-title">Cuenta corriente</span>
+                        <p>-5.251.835 CLP</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 9 -->
+            <div class="col s12 m6 l4">
+                <div class="card tarjeta positivo">
+                    <div class="card-content white-text">
+                        <span class="card-title">CMR</span>
+                        <p>182.591 CLP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

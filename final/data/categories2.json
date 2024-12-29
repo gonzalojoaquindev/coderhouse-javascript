@@ -1,0 +1,189 @@
+[
+    {
+        "category_name": "Casa",
+        "color": "ffc107",
+        "icon": "home",
+        "subcategories": [
+            {
+                "id": 1,
+                "icon": "home",
+                "name": "Arriendo"
+            },
+            {
+                "id": 2,
+                "icon": "home",
+                "name": "Agua"
+            },
+            {
+                "id": 3,
+                "icon": "home",
+                "name": "Luz"
+            },
+            {
+                "id": 4,
+                "icon": "home",
+                "name": "Gas"
+            },
+            {
+                "id": 5,
+                "icon": "home",
+                "name": "Insumos hogar"
+            },
+            {
+                "id": 6,
+                "icon": "home",
+                "name": "Alojamiento"
+            }
+        ]
+    },
+    {
+        "category_name": "Educación",
+        "color": "lime",
+        "icon": "class",
+        "subcategories": [
+            {
+                "id": 7,
+                "icon": "local_library",
+                "name": "Libros"
+            },
+            {
+                "id": 8,
+                "icon": "code",
+                "name": "Bootcamps"
+            },
+            {
+                "id": 9,
+                "icon": "class",
+                "name": "Ingles"
+            },
+            {
+                "id": 10,
+                "icon": "class",
+                "name": "Cursos"
+            }
+        ]
+    },
+    {
+        "category_name": "Transporte",
+        "color": "teal",
+        "icon": "airport_shuttle",
+        "subcategories": [
+            {
+                "id": 11,
+                "icon": "airport_shuttle",
+                "name": "Transporte por viajes"
+            },
+            {
+                "id": 12,
+                "icon": "airport_shuttle",
+                "name": "Transporte a trabajo"
+            },
+            {
+                "id": 13,
+                "icon": "airport_shuttle",
+                "name": "Traslado por ocio"
+            }
+        ]
+    },
+    {
+        "category_name": "Salud",
+        "color": "blue",
+        "icon": "healing",
+        "subcategories": [
+            {
+                "id": 14,
+                "icon": "healing",
+                "name": "Insumos higiene"
+            },
+            {
+                "id": 15,
+                "icon": "local_hospital",
+                "name": "Medico"
+            },
+            {
+                "id": 16,
+                "icon": "healing",
+                "name": "Medicamentos"
+            },
+            {
+                "id": 17,
+                "icon": "fitness_center",
+                "name": "Deporte"
+            },
+            {
+                "id": 18,
+                "icon": "healing",
+                "name": "Corte de pelo"
+            },
+            {
+                "id": 19,
+                "icon": "healing",
+                "name": "Dentista"
+            }
+        ]
+    },
+    {
+        "category_name": "Servicios",
+        "color": "red",
+        "icon": "airport_shuttle",
+        "subcategories": [
+            {
+                "id": 14,
+                "icon": "healing",
+                "name": "Insumos higiene"
+            },
+            {
+                "id": 15,
+                "icon": "local_hospital",
+                "name": "Medico"
+            },
+            {
+                "id": 16,
+                "icon": "healing",
+                "name": "Medicamentos"
+            },
+            {
+                "id": 17,
+                "icon": "fitness_center",
+                "name": "Deporte"
+            },
+            {
+                "id": 18,
+                "icon": "healing",
+                "name": "Corte de pelo"
+            },
+            {
+                "id": 19,
+                "icon": "healing",
+                "name": "Dentista"
+            }
+        ]
+    },
+    {
+        "category_name": "Ingresos",
+        "color": "green",
+        "icon": "local_atm",
+        "subcategories": [
+            {
+                "id": 20,
+                "icon": "local_atm",
+                "name": "Salario"
+            },
+            {
+                "id": 21,
+                "icon": "local_atm",
+                "name": "Trabajos extras"
+            },
+            {
+                "id": 22,
+                "icon": "local_atm",
+                "name": "Bonos"
+            },
+            {
+                "id": 23,
+                "icon": "local_atm",
+                "name": "Feriado"
+            }
+        ]
+    }
+]

@@ -1,0 +1,40 @@
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: #333;
+}
+
+body.dark-mode .transaction-item {
+    border-bottom: 1px solid #444;
+}
+
+body.dark-mode .modal-content {
+    background-color: #333;
+    color: #ffffff;
+}
+
+body.dark-mode .input-field input,
+body.dark-mode .input-field select,
+body.dark-mode .input-field label {
+    color: #ffffff;
+    border-color: #555;
+}
+
+body.dark-mode .input-field input:focus,
+body.dark-mode .input-field select:focus {
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0 1px 0 0 #ffffff;
+}
+
+body.dark-mode .modal-footer .btn-flat {
+    color: #ffffff;
+}
+
+body.dark-mode .sidenav {
+    background-color: #333;
+    color: #ffffff;
+}

@@ -1,0 +1,366 @@
+[
+    {
+        "id": 1,
+        "category_id": "Casa",
+        "icon": "home",
+        "color": "amber",
+        "name": "Arriendo"
+    },
+    {
+        "id": 2,
+        "category_id": "Casa",
+        "icon": "home",
+        "color": "amber",
+        "name": "Agua"
+    },
+    {
+        "id": 3,
+        "category_id": "Casa",
+        "icon": "home",
+        "color": "amber",
+        "name": "Luz"
+    },
+    {
+        "id": 4,
+        "category_id": "Casa",
+        "icon": "home",
+        "color": "amber",
+        "name": "Gas"
+    },
+    {
+        "id": 5,
+        "category_id": "Casa",
+        "icon": "home",
+        "color": "amber",
+        "name": "Insumos hogar"
+    },
+    {
+        "id": 6,
+        "category_id": "Casa",
+        "icon": "home",
+        "color": "amber",
+        "name": "Alojamiento"
+    },
+    {
+        "id": 7,
+        "category_id": "Educación",
+        "icon": "local_library",
+        "color": "deep-orange",
+        "name": "Libros"
+    },
+    {
+        "id": 8,
+        "category_id": "Educación",
+        "icon": "code",
+        "color": "deep-orange",
+        "name": "Bootcamps"
+    },
+    {
+        "id": 9,
+        "category_id": "Educación",
+        "icon": "class",
+        "color": "deep-orange",
+        "name": "Ingles"
+    },
+    {
+        "id": 10,
+        "category_id": "Educación",
+        "icon": "class",
+        "color": "deep-orange",
+        "name": "Cursos"
+    },
+    {
+        "id": 11,
+        "category_id": "Transporte",
+        "icon": "airport_shuttle",
+        "color": "grey",
+        "name": "Transporte por viajes"
+    },
+    {
+        "id": 12,
+        "category_id": "Transporte",
+        "icon": "airport_shuttle",
+        "color": "grey",
+        "name": "Transporte a trabajo"
+    },
+    {
+        "id": 13,
+        "category_id": "Transporte",
+        "icon": "airport_shuttle",
+        "color": "grey",
+        "name": "Traslado por ocio"
+    },
+    {
+        "id": 14,
+        "category_id": "Salud",
+        "icon": "healing",
+        "color": "cyan",
+        "name": "Insumos higiene"
+    },
+    {
+        "id": 15,
+        "category_id": "Salud",
+        "icon": "local_hospital",
+        "color": "cyan",
+        "name": "Medico"
+    },
+    {
+        "id": 16,
+        "category_id": "Salud",
+        "icon": "healing",
+        "color": "cyan",
+        "name": "Medicamentos"
+    },
+    {
+        "id": 17,
+        "category_id": "Salud",
+        "icon": "fitness_center",
+        "color": "cyan",
+        "name": "Deporte"
+    },
+    {
+        "id": 18,
+        "category_id": "Salud",
+        "icon": "healing",
+        "color": "cyan",
+        "name": "Corte de pelo"
+    },
+    {
+        "id": 19,
+        "category_id": "Salud",
+        "icon": "healing",
+        "color": "cyan",
+        "name": "Dentista"
+    },
+    {
+        "id": 20,
+        "category_id": "Servicios",
+        "icon": "devices",
+        "color": "red",
+        "name": "Celular"
+    },
+    {
+        "id": 21,
+        "category_id": "Servicios",
+        "icon": "network_check",
+        "color": "red",
+        "name": "Internet"
+    },
+    {
+        "id": 22,
+        "category_id": "Servicios",
+        "icon": "devices",
+        "color": "red",
+        "name": "Netflix"
+    },
+    {
+        "id": 23,
+        "category_id": "Servicios",
+        "icon": "subscriptions",
+        "color": "red",
+        "name": "Youtube"
+    },
+    {
+        "id": 24,
+        "category_id": "Servicios",
+        "icon": "devices",
+        "color": "red",
+        "name": "Spotify"
+    },
+    {
+        "id": 25,
+        "category_id": "Servicios",
+        "icon": "devices",
+        "color": "red",
+        "name": "SCRIBD"
+    },
+    {
+        "id": 26,
+        "category_id": "Automovil",
+        "icon": "local_car_wash",
+        "color": "blue",
+        "name": "Limpieza"
+    },
+    {
+        "id": 27,
+        "category_id": "Automovil",
+        "icon": "local_gas_station",
+        "color": "blue",
+        "name": "Combustible"
+    },
+    {
+        "id": 28,
+        "category_id": "Automovil",
+        "icon": "directions_car",
+        "color": "blue",
+        "name": "Permiso de circulación"
+    },
+    {
+        "id": 29,
+        "category_id": "Automovil",
+        "icon": "directions_car",
+        "color": "blue",
+        "name": "Revición técnica"
+    },
+    {
+        "id": 30,
+        "category_id": "Automovil",
+        "icon": "directions_car",
+        "color": "blue",
+        "name": "SOAP"
+    },
+    {
+        "id": 31,
+        "category_id": "Automovil",
+        "icon": "directions_car",
+        "color": "blue",
+        "name": "Estacionamiento"
+    },
+    {
+        "id": 32,
+        "category_id": "Automovil",
+        "icon": "directions_car",
+        "color": "blue",
+        "name": "Otros"
+    },
+    {
+        "id": 33,
+        "category_id": "Ahorro",
+        "icon": "attach_money",
+        "color": "lime",
+        "name": "Vivienda"
+    },
+    {
+        "id": 34,
+        "category_id": "Ahorro",
+        "icon": "attach_money",
+        "color": "lime",
+        "name": "Contingencias"
+    },
+    {
+        "id": 35,
+        "category_id": "Ahorro",
+        "icon": "flight_takeoff",
+        "color": "lime",
+        "name": "Vacaciones"
+    },
+    {
+        "id": 36,
+        "category_id": "Compras",
+        "icon": "shopping_cart",
+        "color": "teal",
+        "name": "Herramientas"
+    },
+    {
+        "id": 37,
+        "category_id": "Compras",
+        "icon": "stay_current_portrait",
+        "color": "teal",
+        "name": "Tecnologicos"
+    },
+    {
+        "id": 38,
+        "category_id": "Compras",
+        "icon": "shopping_basket",
+        "color": "teal",
+        "name": "Ropa y zapatos"
+    },
+    {
+        "id": 39,
+        "category_id": "Compras",
+        "icon": "shopping_cart",
+        "color": "teal",
+        "name": "Otros"
+    },
+    {
+        "id": 40,
+        "category_id": "Compras",
+        "icon": "shopping_cart",
+        "color": "teal",
+        "name": "Mercadería"
+    },
+    {
+        "id": 41,
+        "category_id": "Vida, ocio",
+        "icon": "restaurant",
+        "color": "light-green",
+        "name": "Bar, restaurant"
+    },
+    {
+        "id": 42,
+        "category_id": "Vida, ocio",
+        "icon": "free_breakfast",
+        "color": "light-green",
+        "name": "Café"
+    },
+    {
+        "id": 43,
+        "category_id": "Vida, ocio",
+        "icon": "room_service",
+        "color": "light-green",
+        "name": "Estadías, hotel, aribnb"
+    },
+    {
+        "id": 44,
+        "category_id": "Vida, ocio",
+        "icon": "motorcycle",
+        "color": "light-green",
+        "name": "Delivery"
+    },
+    {
+        "id": 45,
+        "category_id": "Vida, ocio",
+        "icon": "weekend",
+        "color": "light-green",
+        "name": "Snack"
+    },
+    {
+        "id": 46,
+        "category_id": "Vida, ocio",
+        "icon": "theaters",
+        "color": "light-green",
+        "name": "Cine, teatro, conciertos"
+    },
+    {
+        "id": 47,
+        "category_id": "Vida, ocio",
+        "icon": "redeem",
+        "color": "light-green",
+        "name": "Regalo"
+    },
+    {
+        "id": 48,
+        "category_id": "Vida, ocio",
+        "icon": "local_bar",
+        "color": "light-green",
+        "name": "Celebración"
+    },
+    {
+        "id": 49,
+        "category_id": "Ingreso",
+        "icon": "local_atm",
+        "color": "green",
+        "name": "Sueldo"
+    },
+    {
+        "id": 50,
+        "category_id": "Ingreso",
+        "icon": "local_atm",
+        "color": "green",
+        "name": "Bonos"
+    },
+    {
+        "id": 51,
+        "category_id": "Ingreso",
+        "icon": "local_atm",
+        "color": "green",
+        "name": "Trabajos extras"
+    },
+    {
+        "id": 52,
+        "category_id": "Otro",
+        "icon": "question_answer",
+        "color": "black",
+        "name": "Otros"
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "name": "debito",
+        "description": "Cuenta rut Banco Estado",
+        "color": "orange",
+        "balance": 20000,
+        "icon": "credit_card"
+    },
+    {
+        "name": "credito",
+        "description": "Mastercard Banco de Chile",
+        "color": "blue",
+        "balance": 40000,
+        "icon": "credit_card"
+    },
+    {
+        "name": "efectivo",
+        "description": "Dinero en efectivo",
+        "color": "green",
+        "balance": 30000,
+        "icon": "local_atm"
+    }
+]

@@ -9,9 +9,10 @@ const modal = document.getElementById('modal');
 const openModal = document.getElementById('button');
 const closeModal = document.getElementById('closeModal');
 const cancelBtn = document.getElementById('cancelBtn');
-const cuentaSelect = document.getElementById('cuenta');
-const categorySelect = document.getElementById('categoria');
+const cuentaSelect = document.getElementById('account');
+const categorySelect = document.getElementById('category');
 const container = document.getElementById('transactions')
+const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
 const accounts = Account.getAccounts()
 const categories = Category.getCategories()
@@ -71,15 +72,28 @@ document.getElementById('transactionForm').addEventListener('submit', (event) =>
     console.log(formObject);
 
 
-    let msg = Transaction.addTransaction(formObject.monto, formObject.tipo, formObject.categoria, formObject.cuenta, formObject.comentarios)
+    let msg = Transaction.addTransaction(formObject.amount, formObject.typeTransaction, formObject.category, formObject.account, formObject.comment)
+    formObject.date = new Date()
+    console.log(formObject)
+    const newTransaction = document.createElement('div');
+
+    newTransaction.innerHTML = `
+        <div class="transaction-header">
+            <h2>${formObject.typeTransaction}</h2>
+            <p class="transaction-amount">$${formObject.amount.toLocaleString()}</p>
+        </div>
+        <div class="transaction-details">
+            <p><strong>Categoría:</strong> ${formObject.category}</p>
+            <p><strong>Cuenta:</strong> ${formObject.account}</p>
+            <p><strong>Fecha:</strong> ${new Intl.DateTimeFormat('es-ES', opciones).format(formObject.date)}</p>
+        </div>
+    `;
+    container.appendChild(newTransaction);
+    /* createTransactionCard(formObject) */
     modal.style.display = 'none';
 
     if (msg) {
         showPopup('Transacción agregada con éxito!')
-        container.textContent = ''
-        for (let transaction of transactions) {
-            createTransactionCard(transaction)
-        }
 
 
     } else {

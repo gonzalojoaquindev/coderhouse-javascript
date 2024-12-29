@@ -1,0 +1,53 @@
+﻿id;category_id;icon;color;name
+1;Casa;home;amber;Arriendo
+2;Casa;home;amber;Agua
+3;Casa;home;amber;Luz
+4;Casa;home;amber;Gas
+5;Casa;home;amber;Insumos hogar
+6;Casa;home;amber;Alojamiento
+7;Educación;local_library;deep-orange;Libros
+8;Educación;code;deep-orange;Bootcamps
+9;Educación;class;deep-orange;Ingles
+10;Educación;class;deep-orange;Cursos
+11;Transporte;airport_shuttle;grey;Transporte por viajes
+12;Transporte;airport_shuttle;grey;Transporte a trabajo
+13;Transporte;airport_shuttle;grey;Traslado por ocio
+14;Salud;healing;cyan;Insumos higiene
+15;Salud;local_hospital;cyan;Medico
+16;Salud;healing;cyan;Medicamentos
+17;Salud;fitness_center;cyan;Deporte
+18;Salud;healing;cyan;Corte de pelo
+19;Salud;healing;cyan;Dentista
+20;Servicios;devices;red;Celular
+21;Servicios;network_check;red;Internet
+22;Servicios;devices;red;Netflix
+23;Servicios;subscriptions;red;Youtube
+24;Servicios;devices;red;Spotify
+25;Servicios;devices;red;SCRIBD
+26;Automovil;local_car_wash;blue;Limpieza
+27;Automovil;local_gas_station;blue;Combustible
+28;Automovil;directions_car;blue;Permiso de circulación
+29;Automovil;directions_car;blue;Revición técnica
+30;Automovil;directions_car;blue;SOAP
+31;Automovil;directions_car;blue;Estacionamiento
+32;Automovil;directions_car;blue;Otros
+33;Ahorro;attach_money;lime;Vivienda
+34;Ahorro;attach_money;lime;Contingencias
+35;Ahorro;flight_takeoff;lime;Vacaciones
+36;Compras;shopping_cart;teal;Herramientas
+37;Compras;stay_current_portrait;teal;Tecnologicos
+38;Compras;shopping_basket;teal;Ropa y zapatos
+39;Compras;shopping_cart;teal;Otros
+40;Compras;shopping_cart;teal;Mercadería
+41;Vida, ocio;restaurant;light-green;Bar, restaurant
+42;Vida, ocio;free_breakfast;light-green;Café
+43;Vida, ocio;room_service;light-green;Estadías, hotel, aribnb
+44;Vida, ocio;motorcycle;light-green;Delivery
+45;Vida, ocio;weekend;light-green;Snack
+46;Vida, ocio;;light-green;Cine, teatro, conciertos
+47;Vida, ocio;redeem;light-green;Regalo
+48;Vida, ocio;;light-green;Celebración
+49;Ingreso;local_atm;green;Sueldo
+50;Ingreso;local_atm;green;Bonos
+51;Ingreso;local_atm;green;Trabajos extras
+52;Otro;;;Otros

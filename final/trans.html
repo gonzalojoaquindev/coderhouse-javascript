@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transacciones</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/transactions.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <!-- Íconos de Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-wrapper teal white-text">
+
+
+            <!-- Links del centro -->
+            <ul class=" left hide-on-med-and-down">
+                <li class="active"><a href="trans.html" id="transactions">Transacciones</a></li>
+                <li><a href="panel.html" id="panel">Panel de Control</a></li>
+                <li><a href="accounts.html">Cuentas</a></li>
+                <li><a href="categories.html">Categorias</a></li>
+                <!--   <li><a href="#" id="toggleDarkMode" class="btn blue waves-effect">Modo Oscuro</a></li> -->
+
+
+            </ul>
+            <!-- Logo -->
+            <a href="#" class="brand-logo">
+                <img src="assets/logo.svg" alt="Logo" class="logo-img" />
+            </a>
+
+
+            <!-- Botones y perfil a la derecha -->
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <div class="switch">
+                        <label>
+                            Claro
+                            <input type="checkbox" class="toggleDarkMode">
+                            <span class="lever"></span>
+                            Oscuro
+                        </label>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#" class="profile-menu">
+                        <img src="assets/profile.jpg" alt="Perfil" class="circle profile-img">
+                        <span>Gonzalo Araya</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Botón de menú móvil -->
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger right">
+                <i class="material-icons">menu</i>
+            </a>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Contenedor de las transacciones -->
+        <div id="transactionList" class="transaction-list">
+            <!-- Aquí se pintarán las transacciones dinámicamente -->
+        </div>
+    </div>
+
+
+
+    <!-- Modal Structure -->
+    <div id="transactionModal" class="modal">
+        <div class="modal-content">
+            <h4 id="modal-title">Agregar Transacción</h4>
+
+            <form id="transactionForm">
+                <!-- Monto -->
+                <div class="input-field">
+                    <input id="amount" type="number" required>
+                    <label for="amount">Monto</label>
+                </div>
+
+                <!-- Cuenta -->
+                <div class="input-field">
+                    <select id="account" required>
+                        <option value="" disabled selected>Selecciona una cuenta</option>
+                        <option value="debito">Debito</option>
+                        <option value="efectivo">Efectivo</option>
+                        <option value="credito">Crédito</option>
+                    </select>
+                    <label for="account">Cuenta</label>
+                </div>
+
+                <div class="row row2">
+                    <div class="col s2 icon-form-category ">
+                        <i id="category-icon" class="material-icons icon-form-category2"
+                            style=" color: teal;">help_outline</i>
+                    </div>
+                    <!-- Categoría -->
+                    <div class="input-field col s5">
+
+                        <select id="category-select" required>
+                            <option value="" disabled selected>Selecciona una categoría</option>
+                        </select>
+                        <label for="category-select">Categoría</label>
+                    </div>
+
+                    <!-- Subcategoría -->
+                    <div class="input-field col s5">
+                        <select id="subcategory-select">
+                            <option value="" selected>Selecciona una subcategoría</option>
+                        </select>
+                        <label>Subcategoría</label>
+                    </div>
+
+                </div>
+
+                <!-- Tipo de Transacción -->
+                <p>Tipo de Transacción</p>
+                <p>
+                    <label>
+                        <input name="transactionType" type="radio" value="ingreso" required />
+                        <span>Ingreso</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="transactionType" type="radio" value="gasto" required checked />
+                        <span>Gasto</span>
+                    </label>
+                </p>
+
+                <!-- Fecha -->
+                <div class="input-field">
+                    <input id="date" type="text" class="datepicker" required>
+                    <label for="date">Fecha</label>
+                </div>
+
+                <!-- Submit -->
+                <div class="modal-footer">
+                    <a href="#!" id="saveTransaction" class="modal-close waves-effect waves-green btn">Guardar</a>
+                    <a href="#!" id="updateButton" class="modal-close waves-effect waves-green btn"
+                        style="display: none;">Actualizar</a>
+                    <!--   <button type="submit" class="modal-close waves-effect waves-green btn"
+                        id="saveTransaction">Guardar</button> -->
+                </div>
+
+                <div class="modal-footer" style="display: none;" id="updateButton">
+                    <!--  <button type="submit" class="modal-close waves-effect waves-green btn">Actualizar</button> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Menú móvil -->
+    <ul class="sidenav teal" id="mobile-menu">
+        <li><a href="#" id="transactions"><strong>Transacciones</strong></a></li>
+        <li><a href="#" id="panel">Panel de Control</a></li>
+        <li><a href="#" id="accounts">Cuentas</a></li>
+
+        <li>
+            <a href="#" class="profile-menu">
+                <img src="assets/profile.jpg" alt="Perfil" class="circle profile-img">
+                <span>Gonzalo Araya</span>
+            </a>
+        </li>
+
+    </ul>
+
+
+
+    <!-- Button to trigger the modal -->
+    <a id="addTransactionButton" class="waves-effect waves-light btn modal-trigger add" href="#transactionModal"><i
+            class="material-icons left">send</i>Agregar Transacción</a>
+
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+    <!--  <script src="js/transactions.js"></script> -->
+    <script src="js/organizado.js"></script>
+
+</body>
+
+</html>
